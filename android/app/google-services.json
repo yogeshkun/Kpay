@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "663076288251",
+    "project_id": "kpay-b40a1",
+    "storage_bucket": "kpay-b40a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663076288251:android:1024d0df7297166839e25e",
+        "android_client_info": {
+          "package_name": "com.awesomeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663076288251-jde2hbbl9ps0aqhb3j3rhtbmuecgb0km.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU3jio-yCHrGnUwjaVHuiCsQEpO3i1Cfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663076288251-jde2hbbl9ps0aqhb3j3rhtbmuecgb0km.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
