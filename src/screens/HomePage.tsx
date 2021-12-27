@@ -10,8 +10,7 @@ import KButtons from '../components/atoms/KButtons'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StackActions } from '@react-navigation/native';
 
-function HomePage({ route, navigation }) {
-    let details = route.params
+function HomePage({ navigation }) {
     function Button(id) {
         console.log(id)
     }

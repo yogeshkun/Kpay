@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { NavigationContainer, DarkTheme } from "@react-navigation/native"
 import { Provider as PaperProvider } from 'react-native-paper';
 //Screens to navigation
-
+import { NativeBaseProvider} from 'native-base';
 
 //Navigation 
-import BottomNavigator from '../navigation/BottomNavigator';
 import Stacknavigation from '../navigation/StackNavigator';
 
 // const CombinedDefaultTheme = merge(PaperDefaultTheme, NavigationDefaultTheme);
@@ -16,15 +15,17 @@ import Stacknavigation from '../navigation/StackNavigator';
 
 
 export default function Home() {
-    const [isLogged, setLog] = useState(false)
     return (
-        <PaperProvider >
-            
-                <NavigationContainer theme={DarkTheme}>
-                    <Stacknavigation />
-                </NavigationContainer>
-           
-        </PaperProvider>
+        
+            <NativeBaseProvider>
+                
+                    <NavigationContainer >
+                        <Stacknavigation />
+                    </NavigationContainer>
+                
+            </NativeBaseProvider>
+       
     );
 }
+
 

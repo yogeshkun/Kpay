@@ -7,10 +7,11 @@ import {
     Text,
     useColorScheme,
     View,
+    Button
   } from 'react-native';
   import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function Profile() {
+export default function Profile({navigation}) {
     const getData = async () => {
         await AsyncStorage.setItem('BottomPage', 'Profile')
         // const token = await AsyncStorage.getItem('token')
@@ -24,6 +25,7 @@ export default function Profile() {
     return (
         <>
             <Text> Profile</Text>
+            <Button title ="Click Me" onPress={()=> navigation.navigate("Yogesh")}/>
         </>
     )
 }

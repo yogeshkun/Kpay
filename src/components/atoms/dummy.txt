@@ -1,0 +1,34 @@
+<Transitioning.View
+      ref={ref}
+      transition={transition}
+      style={styles.container}
+    >
+
+      {
+        data.map(({ bg, color, category, subCategories }, index) => {
+        return (
+          <TouchableOpacity
+            key={category}
+            onPress={() => {
+              ref.current.animateNextTransition();
+              setCurrentIndex(index === currentIndex ? null : index);
+            }}
+            style={styles.cardContainer}
+            activeOpacity={0.9}
+          >
+            <View style={[styles.card, { backgroundColor: bg }]}>
+              <Text style={[styles.heading, { color }]}>{category}</Text>
+              {index === currentIndex && (
+                <View style={styles.subCategoriesList}>
+                  {subCategories.map((subCategory) => (
+                    <Text key={subCategory} style={[styles.body, { color }]}>
+                      {subCategory}
+                    </Text>
+                  ))}
+                </View>
+              )}
+            </View>
+          </TouchableOpacity>
+        );
+      })}
+      </Transitioning.View>

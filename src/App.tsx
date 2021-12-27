@@ -1,8 +1,8 @@
 import 'react-native-gesture-handler'
 import React from 'react'
-import Home from './src/screens/index'
+import Home from './screens/index'
 import { Provider } from 'react-redux';
-import store from './src/redux/store/Store'
+import store from './redux/store/Store'
 function App() {
   return (
     <Provider store={store}>
